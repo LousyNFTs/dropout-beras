@@ -43,8 +43,17 @@ const Background = styled((props) => {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center;
+    object-position: 50% 80%;
   }
+`;
+
+const MockupsGif = styled((props) => {
+  return <Box component="img" src="mockups.gif" {...props} />;
+})`
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 10px;
+  margin-bottom: 1em;
 `;
 
 const ConnectButton = styled(WalletDialogButton)`
@@ -208,6 +217,7 @@ const Home = (props: HomeProps) => {
             boxShadow: "0px 4px #cccccc",
           }}
         >
+          <MockupsGif />
           {!wallet.connected ? (
             <ConnectButton>Connect Wallet</ConnectButton>
           ) : (
