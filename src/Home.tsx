@@ -25,7 +25,7 @@ import { Box } from "@material-ui/core";
 const Background = styled((props) => {
   return (
     <Box {...props}>
-      <img src="background.jpeg" alt="Space pirate dogs at a round table" />
+      <img src="background.png" alt="Droupout bears falling from the sky" />
     </Box>
   );
 })`
@@ -212,7 +212,7 @@ const Home = (props: HomeProps) => {
         <Paper
           style={{
             padding: 24,
-            backgroundColor: "#ffffff",
+            backgroundColor: "#f0f0f0",
             borderRadius: 10,
             boxShadow: "0px 4px #cccccc",
           }}
